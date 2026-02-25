@@ -622,4 +622,8 @@ body.light-mode .footer {
         grid-template-columns: 1fr;
         gap: 50px;
     }
+    .footer-social {
+    margin-top: 25px;
+    }
+
 }
