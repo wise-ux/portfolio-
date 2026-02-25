@@ -2,9 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="Wise Vadu Portfolio, Frontend Engineer, UI UX Designer, Modern Web Development, JavaScript Specialist, Responsive Websites, Creative Web Developer Nigeria">
+    <meta name="description" content="Wise Vadu is a frontend engineer specializing in modern web interfaces, seamless user experiences, and scalable digital solutions. Open to global freelance and remote opportunities.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/icon logo 2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="
+        https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
     <link rel="stylesheet" href="css/projects.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Projects | Wise Vadu</title>
 </head>
 <body>
     <!-- ================= NAVIGATION START ================= -->
@@ -14,7 +23,9 @@
         <!-- Logo / Brand Name -->
         <div class="logo">
             <a href="index.html">
-                WISE VADU
+                <span><img class="logicon" src="img/icon logo 2.png" alt=""></span>
+                <span><img class="wise" src="img/wisevadu 1.png" alt=""></span>
+                <span><img class="motto" src="img/motto logo 2.png" alt=""></span>
             </a>
         </div>
 
@@ -26,6 +37,10 @@
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+
+        <div class="navchart"> 
+            <button class="chart_bnt"><a href="https://wa.me/2348135771538"> Chart Me</a></button>
+        </div>
 
         <!-- Right Side Controls -->
         <div class="nav-controls">
@@ -47,8 +62,162 @@
 <!-- ================= NAVIGATION END ================= -->
 
 
+    <!-- HERO SECTION -->
+    <section class="projects-hero">
+        <div class="projects-hero-container">
+            <h1>My Projects</h1>
+            <p>Here’s a collection of my web development and design work across multiple industries.</p>
+        </div>
+    </section>
+
+    <!-- ================= PROJECT FILTER ================= -->
+<section class="projects-filter">
+    <div class="filter-container">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="uiux">UI/UX</button>
+    </div>
+</section>
+
+<!-- ================= FEATURED PROJECT ================= -->
+<section class="featured-project">
+    <div class="featured-container">
+        <img src="featured-project.jpg" alt="Featured Project">
+        <div class="featured-info">
+            <h2>Featured Project: Awesome Web App</h2>
+            <p>A cutting-edge web application built with React, Python backend, and modern UX/UI design.</p>
+            <a href="featured-project-details.html" class="project-button">View Project</a>
+        </div>
+    </div>
+</section>
+
+    <!-- PROJECTS GRID -->
+        <!-- Project Card Example -->
+<section class="projects-grid-section">
+    <div class="projects-container">
+
+        <!-- Frontend Project -->
+        <div class="project-card animate-on-scroll" data-category="frontend">
+            <img src="frontend1.jpg" alt="Frontend Project 1">
+            <div class="project-info">
+                <h3>Responsive Portfolio Site</h3>
+                <p>Created a fully responsive website using HTML, CSS, and JS with smooth animations.</p>
+                <a href="frontend1-details.html" class="project-button">View Project</a>
+            </div>
+        </div>
+
+        <!-- Backend Project -->
+        <div class="project-card animate-on-scroll" data-category="backend">
+            <img src="backend1.jpg" alt="Backend Project 1">
+            <div class="project-info">
+                <h3>API Integration System</h3>
+                <p>Built secure RESTful APIs with Python and SQL for a real-time data management system.</p>
+                <a href="backend1-details.html" class="project-button">View Project</a>
+            </div>
+        </div>
+
+        <!-- UI/UX Project -->
+        <div class="project-card animate-on-scroll" data-category="uiux">
+            <img src="uiux1.jpg" alt="UI/UX Project 1">
+            <div class="project-info">
+                <h3>Mobile App Dashboard</h3>
+                <p>Designed user-friendly dashboards and flows with Figma, emphasizing UX principles.</p>
+                <a href="uiux1-details.html" class="project-button">View Project</a>
+            </div>
+        </div>
+
+        <!-- Frontend Project -->
+        <div class="project-card animate-on-scroll" data-category="frontend">
+            <img src="frontend2.jpg" alt="Frontend Project 2">
+            <div class="project-info">
+                <h3>E-commerce Website</h3>
+                <p>Developed interactive e-commerce platform with shopping cart and payment integration.</p>
+                <a href="frontend2-details.html" class="project-button">View Project</a>
+            </div>
+        </div>
+
+        <!-- Backend Project -->
+        <div class="project-card animate-on-scroll" data-category="backend">
+            <img src="backend2.jpg" alt="Backend Project 2">
+            <div class="project-info">
+                <h3>Database Management System</h3>
+                <p>Created robust SQL database and automated backend processes for inventory management.</p>
+                <a href="backend2-details.html" class="project-button">View Project</a>
+            </div>
+        </div>
+
+        <!-- UI/UX Project -->
+        <div class="project-card animate-on-scroll" data-category="uiux">
+            <img src="uiux2.jpg" alt="UI/UX Project 2">
+            <div class="project-info">
+                <h3>Landing Page Design</h3>
+                <p>Crafted visually appealing landing pages with a focus on user experience and conversions.</p>
+                <a href="uiux2-details.html" class="project-button">View Project</a>
+            </div>
+        </div>
+
+    </div>
+
+            <!-- ================= LOAD MORE PROJECTS ================= -->
+        <div class="load-more-container">
+            <button id="loadMoreBtn">Load More Projects</button>
+        </div>
+</section>
+
+            <!-- Add more project cards as needed -->
+            
+        
 
 
-<script src="js/projects.js"></script>
+
+
+
+     <!-- =====================footer============== -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Brand Column -->
+        <div class="footer-brand">
+            <h2>Wise Vadu</h2>
+            <p>
+                Full-Stack Developer building sharp, scalable, and high-performance
+                digital systems using modern front-end technologies and powerful
+                back-end solutions powered by Python and SQL.
+            </p>
+        </div>
+
+        <!-- Navigation Column -->
+        <div class="footer-links">
+            <h4>Navigation</h4>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <!-- Connect Column -->
+       <div class="footer-social">
+            <a href="https://github.com/wise-ux"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/avaadu-wisdom"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://x.com/Footballerskill"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.instagram.com/wise_vadu"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:wisevadu@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+
+    </div>
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom">
+        © 2026 Wise Vadu — Crafted with precision.
+    </div>
+
+</footer>
+
+    <script src="js/projects.js"></script>
 </body>
 </html>

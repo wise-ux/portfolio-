@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 /* ================= BODY DEFAULT DARK THEME ================= */
@@ -46,6 +47,26 @@ body.light-mode .navbar {
     font-weight: 600;
     color: inherit;
     letter-spacing: 2px;
+    gap: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo a span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.logicon{
+    width: 30px;
+}
+.wise{
+    width: 75px;
+}
+.motto{
+    width: 65px;
 }
 
 /* ================= NAV LINKS ================= */
@@ -53,6 +74,7 @@ body.light-mode .navbar {
     list-style: none;
     display: flex;
     gap: 30px;
+    margin-right: -25%;
 }
 
 .nav-links li a {
@@ -72,12 +94,31 @@ body.light-mode .navbar {
     color: #4da6ff;
 }
 
+/* chart btn  */
+.navchart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-right: -25%;
+}
+.navchart button{
+    padding: 7px 10px;
+    background-color: #4da6ff;
+    border-radius: 20px;
+    border: none;
+    font-size: 12px;
+    font-weight: 700;
+}
+
 /* ================= NAV CONTROLS ================= */
 .nav-controls {
     display: flex;
     align-items: center;
     gap: 20px;
 }
+
+
 
 /* ================= THEME BUTTON ================= */
 .theme-btn {
@@ -112,9 +153,12 @@ body.light-mode .navbar {
         right: 0;
         background-color: #111;
         flex-direction: column;
-        width: 250px;
+        width: 350px;
         padding: 20px;
         display: none;
+    }
+    .navchart{
+    margin-right: -30%;
     }
 
     body.light-mode .nav-links {
@@ -131,3 +175,388 @@ body.light-mode .navbar {
         display: flex;
     }
 }
+
+/* ================= SERVICES HERO ================= */
+.services-hero {
+    padding: 140px 10%;
+    background: #0f0f0f;
+    color: white;
+    text-align: center;
+}
+
+body.light-mode .services-hero {
+    background: #f8f8f8;
+    color: #111;
+}
+
+.services-hero h1 {
+    font-size: 46px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.services-hero p {
+    font-size: 16px;
+    line-height: 1.8;
+    opacity: 0.85;
+}
+
+/* ================= HERO HIGHLIGHTS TYPING ================= */
+.hero-highlights {
+    font-size: 16px;
+    color: #4da6ff;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.hero-highlights .cursor {
+    display: inline-block;
+    width: 2px;
+    height: 16px;
+    background: #4da6ff;
+    margin-left: 4px;
+    animation: blink 1s infinite;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
+/* ================= SERVICES GRID ================= */
+.services-grid-section {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.service-card {
+    background: #161b22;
+    color: white;
+    padding: 30px 20px;
+    border-radius: 12px;
+    width: 280px;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+body.light-mode .service-card {
+    background: #f5f5f5;
+    color: #111;
+}
+
+.service-card i {
+    font-size: 34px;
+    color: #4da6ff;
+    margin-bottom: 20px;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+/* Hover effect */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(77,166,255,0.3);
+}
+
+/* ================= SERVICE ICON BOUNCE ================= */
+.service-icon {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.service-icon.bounce {
+    animation: bounce-icon 2s ease-in-out infinite;
+}
+
+@keyframes bounce-icon {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+/* ================= SERVICE ICON HOVER ================= */
+.service-card i {
+    font-size: 36px;
+    color: #4da6ff;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover i {
+    transform: scale(1.2);
+    color: #72c1ff;
+    text-shadow: 0 4px 15px rgba(77,166,255,0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* ================= WHY CHOOSE MY SERVICES ================= */
+.why-choose-section {
+    padding: 100px 10%;
+    background: #0f0f0f;
+    color: white;
+    text-align: center;
+}
+
+body.light-mode .why-choose-section {
+    background: #f8f8f8;
+    color: #111;
+}
+
+.why-choose-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.why-choose-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.choose-card {
+    background: #161b22;
+    padding: 30px 20px;
+    border-radius: 12px;
+    width: 280px;
+    transition: all 0.3s ease;
+}
+
+body.light-mode .choose-card {
+    background: #f5f5f5;
+    color: #111;
+}
+
+.choose-card i {
+    font-size: 32px;
+    color: #4da6ff;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+}
+
+.choose-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.choose-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+/* Hover effect */
+.choose-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(77,166,255,0.3);
+}
+
+.choose-card:hover i {
+    transform: scale(1.2);
+    color: #72c1ff;
+    text-shadow: 0 4px 15px rgba(77,166,255,0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .why-choose-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+/* Fade-in on scroll for choose cards */
+.choose-card {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.choose-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ================= SERVICES CTA ================= */
+.services-cta {
+    padding: 80px 10%;
+    background: #0a0a0a;
+    text-align: center;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+body.light-mode .services-cta {
+    background: #f8f8f8;
+    border-color: #ddd;
+}
+
+.services-cta .cta-text {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    opacity: 0.85;
+    letter-spacing: 1px;
+}
+
+.services-cta .cta-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #4da6ff;
+    color: white;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.services-cta .cta-button:hover {
+    background: #3690e0;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(77,166,255,0.4);
+}
+
+/* ================= PRO FOOTER ================= */
+
+.footer {
+    background: #0d0d0d;
+    color: #eaeaea;
+    padding: 120px 8% 40px;
+}
+
+body.light-mode .footer {
+    background: #f5f5f5;
+    color: #111;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+}
+
+/* Brand */
+.footer-brand h2 {
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.footer-brand p {
+    max-width: 480px;
+    line-height: 1.8;
+    opacity: 0.75;
+}
+
+/* Links */
+.footer-links h4 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #4da6ff;
+    transform: translateX(5px);
+}
+
+/* Divider */
+.footer-divider {
+    height: 1px;
+    background: #222;
+    margin: 80px 0 30px;
+}
+
+/* Bottom */
+.footer-bottom {
+    font-size: 13px;
+    opacity: 0.6;
+}
+
+
+
+.footer-social {
+    display: flex;
+    gap: 25px;
+    margin-top: 160px;
+    /* margin-bottom: -50px; */
+}
+
+.footer-social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333;
+    border-radius: 50%;
+    color: #aaa;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    background: #4da6ff;
+    color: white;
+    border-color: #4da6ff;
+    transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+}
+
+

@@ -27,3 +27,17 @@ themeToggle.addEventListener("click", () => {
         themeToggle.textContent = "🔆";
     }
 });
+
+
+// ================= CONTACT FORM SUBMIT =================
+const contactForm = document.getElementById("contactForm");
+
+contactForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    // Simple alert for demo (replace with backend API later)
+    alert("Thank you! Your message has been sent.");
+    
+    // Clear form
+    contactForm.reset();
+});

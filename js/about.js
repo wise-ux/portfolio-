@@ -27,3 +27,37 @@ themeToggle.addEventListener("click", () => {
         themeToggle.textContent = "🔆";
     }
 });
+
+// ================= TERMINAL TYPING =================
+
+const terminalSection = document.querySelector(".about-terminal");
+const typingText = document.getElementById("typing-text");
+
+const text = "Building structured, scalable, and performance-driven digital systems.";
+
+let index = 0;
+let hasTyped = false;
+
+function typeEffect() {
+    if (index < text.length) {
+        typingText.innerHTML += text.charAt(index);
+        index++;
+        setTimeout(typeEffect, 145);
+    } else {
+        document.querySelector(".cursor").style.animation = "none";
+    }
+}
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && !hasTyped) {
+            terminalSection.classList.add("visible");
+            setTimeout(() => {
+                typeEffect();
+            }, 500);
+            hasTyped = true;
+        }
+    });
+}, { threshold: 0.5 });
+
+observer.observe(terminalSection);
